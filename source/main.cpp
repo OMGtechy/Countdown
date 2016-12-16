@@ -82,7 +82,7 @@ int main(int argc, char* argv[]) {
 
     std::vector<std::future<std::vector<std::string>>> futures;
 
-    const size_t jump = 20000;
+    const int jump = 20000;
     auto wordIter = words.cbegin();
 
     for(;;) {
