@@ -67,6 +67,7 @@ int main(int argc, char* argv[]) {
     std::cout << words.size() << " words loaded!" << std::endl;
 
     std::string anagram = argv[1];
+    std::transform(anagram.begin(), anagram.end(), anagram.begin(), tolower);
 
     std::cout << "Searching for anagrams of " << anagram << std::endl;
 
